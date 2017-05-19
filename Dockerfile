@@ -11,5 +11,5 @@ RUN apt-get update &&  apt-get install -y \
           && docker-php-ext-install -j$(nproc) gd \
           && docker-php-ext-install pdo pdo_mysql \
           && docker-php-ext-install curl \
-          && pecl install redis-3.1.2 && docker-php-ext-enable \ # redis
+          && pecl install redis-3.1.2 && docker-php-ext-enable redis \ # redis
           # && pecl install memcached-2.2.0  && docker-php-ext-enable memcached \ # memcached
